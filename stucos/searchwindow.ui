@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Searchwindow</class>
+ <widget class="QWidget" name="Searchwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1195</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生选课系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse_file.qrc">
+    <normaloff>:/new/prefix1/img/9.png</normaloff>:/new/prefix1/img/9.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+background-color:rgba(255,255,255,0.8);
+font-size:18px;
+font-style:MingLiU-ExtB;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+
+QComboBox{
+background-color:rgba(255,255,255,0.8);
+font-size:18px;
+font-style:MingLiU-ExtB;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1201</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame_2 {border-image: url(:/new/prefix1/img/7.png);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>1171</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame { background-color: rgba(225, 225, 225,0.5);}
+QPushButton{
+background:#ced1d8;
+background-color:rgba(255,255,255,0.7);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+QPushButton:pressed{
+background-color:rgb(225,225,225);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="Cname_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>10</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchButton">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>130</y>
+       <width>93</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-colour:rgba(225,225,225,1);</string>
+     </property>
+     <property name="text">
+      <string>开始查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="restartButton">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>130</y>
+       <width>93</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-colour:rgba(225,225,225,1);</string>
+     </property>
+     <property name="text">
+      <string>重置</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CTname_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>70</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#lineEdit{
+background-color:rgba(255,255,255,0.8);
+font-size:18px;
+font-style:MingLiU-ExtB;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;课程名称：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>70</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;开课教师：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;课程性质：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Cno_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;课程序号：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>10</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;开课院系：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Cschool_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>10</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>信息与通信工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电子科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>材料与能源学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>机械与电气工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>光电科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>自动化工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>资源与环境学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>计算机科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>信息与软件工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>航天航空学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>数学科学学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>医学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>生命科学与技术学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>经济与管理学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>公共管理学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>外国语学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>马克思学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>格拉斯哥学院</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="CTschool_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>信息与通信工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电子科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>材料与能源学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>机械与电气工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>光电科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>自动化工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>资源与环境学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>计算机科学与工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>信息与软件工程学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>航天航空学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>数学科学学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>医学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>生命科学与技术学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>经济与管理学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>公共管理学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>外国语学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>马克思学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>格拉斯哥学院</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>70</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;教师所在院系：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Ccategory_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>专业必修课</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>专业选修课</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>数学与自然科学基础课</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>通用外语</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>多元化选修课</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>1171</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1171</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#tableWidget{background-color:rgba(225,225,225,0.5);}
+</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>课程序号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程性质</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>职称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师所在院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学时</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学分</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程容量</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课学生人数</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课地点</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课时间</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;全校开课查询&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>10</y>
+      <width>93</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#backButton{
+background:#ced1d8;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+#backButton:pressed{
+background-color:rgb(225,225,225);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;返回首页</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/new/prefix1/img/4.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

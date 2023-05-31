@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Selectionwindow</class>
+ <widget class="QWidget" name="Selectionwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1189</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生选课系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse_file.qrc">
+    <normaloff>:/new/prefix1/img/9.png</normaloff>:/new/prefix1/img/9.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+color:#8d98a1;
+background-color:rgb(225,225,225);
+font-size:18px;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+QPushButton{
+background:#ced1d8;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+QPushButton:pressed{
+background-color:rgb(225,225,225);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1191</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{border-image: url(:/new/prefix1/img/5.png);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>1171</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1171</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#tableWidget_2{background-color:rgba(225,225,225,0.5);}
+</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>课程序号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程性质</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>职称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师所在院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学时</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学分</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程容量</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课学生人数</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课地点</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课时间</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>60</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#000000;&quot;&gt;可修课程&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>1171</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1171</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#tableWidget{background-color:rgba(225,225,225,0.5);}
+</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>课程序号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程性质</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>职称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>教师所在院系</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学时</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学分</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>课程容量</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课学生人数</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课地点</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>上课时间</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/new/prefix1/img/4.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectButton">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>60</y>
+      <width>93</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-colour:rgba(225,225,225,1);</string>
+    </property>
+    <property name="text">
+     <string>选课</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>10</y>
+      <width>93</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-colour:rgba(225,225,225,1);</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;返回首页</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;当前已选课程学分和：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>370</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#000000;&quot;&gt;已选课程&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnButton">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>370</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退课</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

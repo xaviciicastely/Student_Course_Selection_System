@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Coursetable</class>
+ <widget class="QWidget" name="Coursetable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生选课系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse_file.qrc">
+    <normaloff>:/new/prefix1/img/9.png</normaloff>:/new/prefix1/img/9.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1131</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{border-image: url(:/new/prefix1/img/8.jpg);}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>20</y>
+      <width>93</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#ced1d8;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;返回首页</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(233, 236, 242,0.7);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;我的课表&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>971</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(225, 225, 225,0.8);</string>
+    </property>
+    <row>
+     <property name="text">
+      <string>第一、二节</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>第三、四节</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>第五、六节</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>第七、八节</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>第九、十节</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>周一</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周二</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周三</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周四</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周五</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周六</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>周日</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_2 {image: url(:/new/prefix1/img/4.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>
