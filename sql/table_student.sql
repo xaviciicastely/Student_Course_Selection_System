@@ -1,0 +1,13 @@
+SELECT * FROM scss.student;
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020010906031', 'aq');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020020916005', 'lyl');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020060401003', 'hy');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908004', 'lkl');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908020', 'qgbya');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908021', 'shy');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908022', 'yyj');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908023', 'myf');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020080908028', 'qz');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020090919030', 'zyc');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020140902025', 'zrx');
+INSERT INTO `scss`.`student` (`Sno`, `Spassword`) VALUES ('2020140902027', 'wyx');
