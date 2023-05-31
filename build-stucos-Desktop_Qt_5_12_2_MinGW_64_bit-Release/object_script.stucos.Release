@@ -1,0 +1,14 @@
+release/main.o
+release/optionwindow.o
+release/loginwindow.o
+release/selectionwindow.o
+release/logwindow.o
+release/coursetable.o
+release/searchwindow.o
+release/qrc_resourse_file.o
+release/moc_optionwindow.o
+release/moc_loginwindow.o
+release/moc_selectionwindow.o
+release/moc_logwindow.o
+release/moc_coursetable.o
+release/moc_searchwindow.o

@@ -1,0 +1,14 @@
+debug/main.o
+debug/optionwindow.o
+debug/loginwindow.o
+debug/selectionwindow.o
+debug/logwindow.o
+debug/coursetable.o
+debug/searchwindow.o
+debug/qrc_resourse_file.o
+debug/moc_optionwindow.o
+debug/moc_loginwindow.o
+debug/moc_selectionwindow.o
+debug/moc_logwindow.o
+debug/moc_coursetable.o
+debug/moc_searchwindow.o
